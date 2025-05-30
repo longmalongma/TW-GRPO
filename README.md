@@ -35,12 +35,14 @@ A data augmentation converting single-choice QA into multi-choice formats via qu
 
 To better understand the characteristics of our method, we provide case studies comparing reasoning paths between TW-GRPO and [T-GRPO(Video-R1)](https://github.com/tulerfeng/Video-R1) in [`example/performance_comparison.md`](example/performance_comparison.md).
 
-## 🚀 Training Models
+## 🛠️ Set up
 
 > [!NOTE]
 > 💻 The training commands below are configured for a node of 2 x H800 (80GB). Training for 500 steps takes approximately 4 hours.
 
-### 🛠️ Set up
+To successfully implement TW-GRPO training, you need to complete the following three essential steps: **dependency installation**, **model backbone download**, and **training dataset download**.
+
+### 🛠️ Step 1: Environment Setup and Dependency Installation
 ```bash
 wget https://github.com/longmalongma/TW-GRPO
 cd TW-GRPO
@@ -56,17 +58,20 @@ pip install -e .
 cd ..
 ```
 
-### 📥 Download Model Backbone
+### 📥 Step 2: Download Model Backbone
 
-To download the Qwen2.5-VL-7B-Instruct model:
+To download the Qwen2.5-VL-7B-Instruct model, we use the `huggingface_hub` package for quick single-line downloads:
+
 ```bash
 pip install -U huggingface_hub
 huggingface-cli download --resume-download Qwen/Qwen2.5-VL-7B-Instruct --local-dir Qwen/Qwen2.5-VL-7B-Instruct
 ```
 
-### 🎥 Download Videos
+### 🎥 Step 3: Download Training Dataset
 
 #### 🧩 CLEVRER
+We use the counterfactual tasks from the CLEVRER dataset as our training data. The JSON files are already saved in [`data/CLEVRER`](data/CLEVRER), but we still need to download the corresponding video data from CLEVRER's official website. You can use the following script for quick setup:
+
 ```bash
 # Create directories
 mkdir -p data/CLEVRER/{train_video,validation_video}
@@ -83,6 +88,9 @@ rm data/CLEVRER/validation_video/video_validation.zip
 ```
 
 #### 🌐 General Video Datasets
+
+The test datasets are provided with download links below. Please organize the test data according to the following guidelines. **If you only want to reproduce results on the CLEVRER dataset, you can skip this step.**
+
 | 📊 Dataset | 💾 Size | 🔗 Link |
 |---------|------|------|
 | [NExT-QA](https://huggingface.co/datasets/lmms-lab/NExTQA) | 11GB | [📥 Download](https://huggingface.co/datasets/lmms-lab/NExTQA) |
@@ -130,9 +138,17 @@ rm data/CLEVRER/validation_video/video_validation.zip
 > ├──├──...
 > ```
 
+### 🏃‍♂️ Training
+
+Once you have prepared the environment, base model, and datasets, you can directly run the following script to train your own TW-GRPO model:
+
+```bash
+bash scripts/tw-grpo.sh
+```
+
 ### ⚙️ Training Configuration Options
 
-TW-GRPO provides flexible configuration through command-line arguments:
+Of course, we also provide convenient parameter settings to help you verify the effects of different designs proposed in the paper:
 
 - **❓ Question Type** (`--question_type`):
   - `mixed`: Multi-choice QA tasks (default)
@@ -154,14 +170,6 @@ TW-GRPO provides flexible configuration through command-line arguments:
 - **🎁 Reward Function** (`--reward_funcs`):
   - `accuracy`: Multi-level reward (partial correctness)
   - `ori_accuracy`: Binary reward (correct/incorrect only)
-
-### 🏃‍♂️ Training
-
-To run TW-GRPO on Qwen2.5-VL-7B-Instruct:
-
-```bash
-bash scripts/tw-grpo.sh
-```
 
 ### 📊 Training Curves Analysis
 
@@ -194,12 +202,11 @@ See [`logs/Qwen2.5-VL-7B-Instruct_clevrer_counterfactual_twgrpo_with_alpha17/`](
 >    - Qwen2.5-VL-7B(zero-shot)/VideoChat-R1/TW-GRPO on all datasets.
 >    - Additional Video-R1 results on CLEVRER/Next-GQA.
 
-After downloading the datasets and completing training, evaluate TW-GRPO using:
+After downloading the datasets and completing training, or downloading our model parameters (available at [here](https://huggingface.co/Falconss1/TW-GRPO)), you can evaluate TW-GRPO using the following script:
 
 ```bash
 bash scripts/evaluate.sh
 ```
-
 To evaluate baselines, you need to download the model first:
 ```bash
 # For Video-R1 model
