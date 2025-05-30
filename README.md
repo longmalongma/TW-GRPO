@@ -33,7 +33,7 @@ A data augmentation converting single-choice QA into multi-choice formats via qu
 
 ## 📈 Comparative Analysis with State-of-the-Art Methods
 
-To better understand the characteristics of our method, we provide case studies comparing reasoning paths between TW-GRPO and [T-GRPO(Video-R1)](https://github.com/tulerfeng/Video-R1) in [`examples/performance_comparison.md`](examples/performance_comparison.md).
+To better understand the characteristics of our method, we provide case studies comparing reasoning paths between TW-GRPO and [T-GRPO(Video-R1)](https://github.com/tulerfeng/Video-R1) in [`example/performance_comparison.md`](example/performance_comparison.md).
 
 ## 🚀 Training Models
 
