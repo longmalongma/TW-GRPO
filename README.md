@@ -42,7 +42,7 @@ To better understand the characteristics of our method, we provide case studies 
 
 ### 🛠️ Set up
 ```bash
-wget https://github.com/falonss703/TW-GRPO
+wget https://github.com/longmalongma/TW-GRPO
 cd TW-GRPO
 conda create -n r1 python=3.10
 conda activate r1
