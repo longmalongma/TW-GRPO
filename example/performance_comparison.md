@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/7c8b40fe-06bd-45bc-b944-70c84dd2b047
 
 **❓ Question**: Based on the measurements from the demonstration video, what is the approximate density of the stone in grams per cubic centimeter (g/cm³)?
 
-🅰️ 2.0 g/cm³  🅱️ 2.2 g/cm³  🅲 2.5 g/cm³✅  🅳 2.7 g/cm³  🅴 3.0 g/cm³
+🅰 2.0 g/cm³  🅱 2.2 g/cm³  🅲 2.5 g/cm³✅  🅳 2.7 g/cm³  🅴 3.0 g/cm³
 
 ### 🧠 Reasoning Chain Comparison: TW-GRPO vs T-GRPO
 
@@ -150,9 +150,9 @@ https://github.com/user-attachments/assets/5a1f7320-0a73-412b-92d9-7a1c2be8551c
 
 **❓ Question**: The person uses multiple similar objects to play an occlusion game. Where is the hidden object at the end of the game from the person's point of view?
 
-🅰️ Under the second object from the left✅
+🅰 Under the second object from the left✅
 
-🅱️ Under the first object from the left
+🅱 Under the first object from the left
 
 🅲 Under the third object from the left
 
@@ -264,9 +264,9 @@ https://github.com/user-attachments/assets/1aaa4bc9-ecc7-42e9-8caa-df2a3e94c735
 
 **❓ Question**: Without the sphere, what will happen?
 
-🅰️ The cube collides with the blue cylinder✅
+🅰 The cube collides with the blue cylinder✅
 
-🅱️ The red object collides with the cube✅
+🅱 The red object collides with the cube✅
 
 🅲 The red cylinder and the blue object collide
 
