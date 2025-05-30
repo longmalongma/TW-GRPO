@@ -25,11 +25,11 @@ Using multi-choice QA tasks with partial correctness evaluation to improve gradi
 🌟 **🔄 Question-Answer Inverse**  
 A data augmentation converting single-choice QA into multi-choice formats via question negation and answer inversion, mitigating data scarcity.
 
-## 🔍 Overview of Token-Level Importance Weighted Group Relative Policy Optimization (TW-GRPO)
+<!-- ## 🔍 Overview of Token-Level Importance Weighted Group Relative Policy Optimization (TW-GRPO)
 
 <img src="assets/figs/overview.jpg" alt="Paper PDF" width="800" height="600">
 
-📊 Overview of the TW-GRPO framework. The diagram shows the key steps in a forward pass, starting from the video input, generating possible completions, and calculating the reward with adjustments for the final objective and model updates. Specifically, **🎁 a multi-level soft reward is incorporated into the reward calculation**, providing partial correctness feedback. These signals are then integrated into the final objective, where **⚖️ token-level importance weighting** is applied, allowing the model to prioritize more informative tokens and improve overall performance.
+📊 Overview of the TW-GRPO framework. The diagram shows the key steps in a forward pass, starting from the video input, generating possible completions, and calculating the reward with adjustments for the final objective and model updates. Specifically, **🎁 a multi-level soft reward is incorporated into the reward calculation**, providing partial correctness feedback. These signals are then integrated into the final objective, where **⚖️ token-level importance weighting** is applied, allowing the model to prioritize more informative tokens and improve overall performance. -->
 
 ## 📈 Comparative Analysis with State-of-the-Art Methods
 
