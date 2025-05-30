@@ -12,7 +12,7 @@
 
 <img src="assets/figs/intro.jpg" alt="Paper PDF" width="800" height="400">
 
-**🎯 Token-Level Importance Weighted Group Relative Policy Optimization (TW-GRPO)** integrates **🧠 focused thinking** and **🎁 soft multi-level rewards** for multi-choice QA. Unlike vanilla thinking which assigns uniform token importance, **🔍 focused thinking highlights critical tokens to dominate loss calculation**. By **⚡ shifting single-choice QA's binary rewards to multi-choice QA's multi-level rewards**, TW-GRPO enables fine-grained gradient estimation and training efficiency.
+**Token-Level Importance Weighting GRPO (TW-GRPO)** integrates **focused thinking** and **soft multi-level rewards** for multi-choice QA. Unlike vanilla thinking which assigns uniform token importance, **focused thinking highlights critical tokens to dominate loss calculation**. By **shifting single-choice QA's binary rewards to multi-choice QA's multi-level rewards**, TW-GRPO enables fine-grained gradient estimation and training efficiency.
 
 ## ✨ Highlights
 
