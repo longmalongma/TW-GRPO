@@ -1,0 +1,21 @@
+{
+  "overall": {
+    "strict_accuracy": 33.33333333333333,
+    "partial_accuracy": 50.0
+  },
+  "single_choice": {
+    "strict_accuracy": 52.9531051964512,
+    "partial_accuracy": 52.9531051964512,
+    "count": 3945
+  },
+  "multiple_choice": {
+    "strict_accuracy": 11.335726431135463,
+    "partial_accuracy": 46.33793060016367,
+    "count": 5293
+  },
+  "avg_think_confidence": 0.0,
+  "avg_answer_confidence": 0.7576497395833334,
+  "completed_samples": 6,
+  "total_samples": 9238,
+  "last_update": "2025-04-22 12:22:07"
+}

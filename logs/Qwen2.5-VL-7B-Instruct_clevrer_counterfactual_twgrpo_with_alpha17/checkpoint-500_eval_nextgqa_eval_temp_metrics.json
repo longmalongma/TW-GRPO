@@ -1,0 +1,9 @@
+{
+  "strict_accuracy": 76.13902395101746,
+  "partial_accuracy": 76.13902395101746,
+  "avg_think_confidence": 0.5118703431703584,
+  "avg_answer_confidence": 0.5662209545408908,
+  "completed_samples": 5553,
+  "total_samples": 5553,
+  "last_update": "2025-04-29 00:35:07"
+}
