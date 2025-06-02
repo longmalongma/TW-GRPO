@@ -1,7 +1,7 @@
 # 🎬 Reinforcing Video Reasoning with Focused Thinking
 
 <p align="center">
-        🤗 <a href="https://huggingface.co/Falconss1/TW-GRPO">Model</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Paper</a> &nbsp&nbsp 
+        🤗 <a href="https://huggingface.co/Falconss1/TW-GRPO">Model</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2505.24718">Paper</a> &nbsp&nbsp 
 </p>
 
 <div align="center">
@@ -257,10 +257,10 @@ We sincerely thank the contributions from the open source community, including t
 
 If you find this project useful in your research, please consider cite:
 ```BibTeX
-@inproceedings{xxx,
+@inproceedings{dang2025reinforcing,
   title = {Reinforcing Video Reasoning with Focused Thinking},
   author    = {Jisheng Dang, Jingze Wu, Teng Wang, Xuanhui Lin, Nannan Zhu, Hongbo Chen, Wei-Shi Zheng, Meng Wang, Tat-Seng Chua},
-  booktitle = {arXiv preprint arXiv},
+  booktitle = {arXiv preprint arXiv:2505.24718},
   year = {2025}
 }
 ```
