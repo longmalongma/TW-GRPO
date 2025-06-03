@@ -257,7 +257,7 @@ We sincerely thank the contributions from the open source community, including t
 
 If you find this project useful in your research, please consider cite:
 ```BibTeX
-@inproceedings{dang2025reinforcing,
+@article{dang2025reinforcing,
   title = {Reinforcing Video Reasoning with Focused Thinking},
   author    = {Jisheng Dang, Jingze Wu, Teng Wang, Xuanhui Lin, Nannan Zhu, Hongbo Chen, Wei-Shi Zheng, Meng Wang, Tat-Seng Chua},
   booktitle = {arXiv preprint arXiv:2505.24718},
