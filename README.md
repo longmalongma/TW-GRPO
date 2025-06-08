@@ -14,16 +14,21 @@
 
 **Token-Level Importance Weighting GRPO (TW-GRPO)** integrates **focused thinking** and **soft multi-level rewards** for multi-choice QA. Unlike vanilla thinking which assigns uniform token importance, **focused thinking highlights critical tokens to dominate loss calculation**. By **shifting single-choice QA's binary rewards to multi-choice QA's multi-level rewards**, TW-GRPO enables fine-grained gradient estimation and training efficiency.
 
+## 🔥 Innovation
+
+✨**💫 Entropy-Guided Vision-Language Reasoning**  
+To the best of our knowledge, we are the **first pioneers to harness the power of intra-group information entropy within GRPO for elevating video reasoning capabilities in MLLMs**. By **elegantly quantifying token significance through sophisticated entropy-based divergence metrics**, our approach establishes a mathematically principled optimization framework that **dynamically spotlights semantically crucial tokens during policy refinement**. This breakthrough innovation illuminates promising pathways toward more efficient, focused, and interpretable reasoning paradigms in multimodal reinforcement learning systems.
+
 ## ✨ Highlights
 
 🌟 **🎯 Token-Level Importance Weighting**  
-We propose a mechanism prioritizing tokens with high informational density during loss computation, enabling concise, task-focused reasoning chains.
+We propose a mechanism prioritizing tokens with **high informational density (estimated by intra-group information entropy)** during loss computation, enabling concise, task-focused reasoning chains.
 
 🌟 **🎨 Multi-grained Reward Modeling**  
-Using multi-choice QA tasks with partial correctness evaluation to improve gradient estimation and policy stability.
+Using multi-choice QA tasks with **partial correctness evaluation** to improve gradient estimation and policy stability.
 
 🌟 **🔄 Question-Answer Inverse**  
-A data augmentation converting single-choice QA into multi-choice formats via question negation and answer inversion, mitigating data scarcity.
+A data augmentation **converting single-choice QA into multi-choice formats via question negation and answer inversion**, mitigating data scarcity.
 
 <!-- ## 🔍 Overview of Token-Level Importance Weighted Group Relative Policy Optimization (TW-GRPO)
 
