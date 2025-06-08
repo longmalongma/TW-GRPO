@@ -17,7 +17,7 @@
 ## 🔥 Innovation
 
 ✨**💫 Entropy-Guided Vision-Language Reasoning**  
-To the best of our knowledge, we are the **first pioneers to harness the power of intra-group information entropy within GRPO for elevating video reasoning capabilities in MLLMs**. By **elegantly quantifying token significance through sophisticated entropy-based divergence metrics**, our approach establishes a mathematically principled optimization framework that **dynamically spotlights semantically crucial tokens during policy refinement**. This breakthrough innovation illuminates promising pathways toward more efficient, focused, and interpretable reasoning paradigms in multimodal reinforcement learning systems.
+To the best of our knowledge, we are the **first pioneers to harness the power of intra-group information entropy within GRPO for elevating video reasoning capabilities in MLLMs**. By **elegantly quantifying token significance through sophisticated entropy-based divergence metrics**, our approach establishes a noval optimization framework that **dynamically spotlights semantically crucial tokens during policy refinement**. This breakthrough innovation illuminates promising pathways toward more efficient, focused, and interpretable reasoning paradigms in multimodal reinforcement learning systems.
 
 ## ✨ Highlights
 
