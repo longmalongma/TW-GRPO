@@ -277,3 +277,7 @@ If you find this project useful in your research, please consider cite:
 **🌟 Star this repo if you find it helpful! 🌟**
 
 </div>
+
+### 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=longmalongma/TW-GRPO&type=Date)](https://www.star-history.com/#longmalongma/TW-GRPO&Date)
