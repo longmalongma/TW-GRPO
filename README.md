@@ -55,11 +55,12 @@ conda create -n r1 python=3.10
 conda activate r1
 pip3 install -e ".[dev]"
 pip3 install flash_attn --no-build-isolation
-git clone https://github.com/huggingface/transformers.git
+git clone https://github.com/huggingface/transformers/archive/refs/tags/v4.50.0.zip
 cd transformers
-pip install .[torch]
+pip install .
 cd qwen-vl-utils
 pip install -e .
+pip install decord
 cd ..
 ```
 
