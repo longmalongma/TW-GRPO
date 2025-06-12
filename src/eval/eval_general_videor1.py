@@ -665,7 +665,7 @@ def evaluate(model_name,dataset_name,batch_size):
         else:
             raise FileNotFoundError(f"Model base path not found: {base_path}")
     
-    dataset_path = os.path.join(private_data_root, "Evaluation", f"{dataset_name}.json")
+    dataset_path = os.path.join(private_data_root, "evaluation", f"{dataset_name}.json")
     output_path = os.path.join(".", "logs", dataset_name, "test", base_path, f"{os.path.basename(model_path)}_{dataset_name}_eval04251.json")
     
     # Check if dataset exists
